@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(60, 0, 115);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 74px;
+    background-color: rgb(49, 1, 94);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 0 33px;
+}
+
+.left {
+    font-size: 2rem;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.firstSection div {
+    width: 30%;
+}
+
+.section-left {
+    margin: 30px 0;
+    font-size: 4.5rem;
+}
+
+#company-name {
+    color: aquamarine;
+}
+
+hr {
+     border: 0;
+    background: rgb(35, 0, 69);
+    height: 5px;
+    margin: 0 50px;
+}
+
+.secondSection {
+    margin: 38px 0;
+}
+
+.featureSection {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 25px;
+    background-color: #6f37dd;
+}
+
+.Section {
+    margin: 10px 0;
+    background-color: rgb(36, 3, 113);
+    border-radius: 25px;
+}
+
+.container {
+    border-radius: 10px;
+    margin: 30px 30px;
+    width: 300px;
+    height: 700;
+    background-color: rgb(36, 3, 113);
+    border: 2px solid #3f0c7c;
+}
+
+.containerText {
+    margin: 30px 30px;
+    display: flex;
+}
+
+.containerButton {
+    margin: 30px 30px;
+}
+
+button {
+    background-color:#0a0a23;
+    color: #fff;
+    border:none; 
+    border-radius:10px; 
+    padding:15px;
+    min-height:30px; 
+    min-width: 120px;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+
+button:hover{
+    background-color: #650a81;
+}
+
+.toolHead {
+    margin: 20px 0;
+}
+
+#theading {
+    text-align: center;
+    font-size:50px;
+}
+
+.containerIcon {
+    width: 60px;
+    margin: 10px 10px;
+}
+
+#featureText {
+    margin: auto;
+    font-size:x-large;
+}
+
+#element {
+    color: aquamarine;
+}

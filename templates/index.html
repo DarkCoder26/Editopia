@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editopia- Edit your file for free</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index/index.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Editopia</div>
+            <div class="right">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contacts</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="section-left"><span id="company-name">Editopia</span> - Edit your <br><span id="element"></span><br>online</div>
+            <div class="section-right">
+                <img src="{{ url_for('static', filename='index/editor.png')}}" width=100% alt="image">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <div class="toolHead">
+                <h1 id="theading">Tools</h1>
+            </div>
+            <div class="featureSection">
+                <div class="Section">
+                    <div class="container">
+                        <div class="containerText">
+                            <img src="{{ url_for('static', filename='index/image-icon.png')}}" class="containerIcon" alt="image-icon">
+                            <span id="featureText">Image</span>
+                        </div>
+                        <div class="containerButton">
+                            <a href="imgEdit"><button>Edit</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Section">
+                    <div class="container">
+                        <div class="containerText">
+                            <img src="{{ url_for('static', filename='index/pdf-icon.png')}}" class="containerIcon" alt="pdf-icon">
+                            <span id="featureText">Pdf</span>
+                        </div>
+                        <div class="containerButton">
+                            <a href="pdfEdit"><button>Edit</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Section">
+                    <div class="container">
+                        <div class="containerText">
+                            <img src="{{ url_for('static', filename='index/video-icon.png')}}" class="containerIcon" alt="video-icon">
+                            <span id="featureText">Video</span>
+                        </div>
+                        <div class="containerButton">
+                            <a href="videoEdit"><button>Edit</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Section">
+                    <div class="container">
+                        <div class="containerText">
+                            <img src="{{ url_for('static', filename='index/file-icon.png')}}" class="containerIcon" alt="file-icon">
+                            <span id="featureText">File</span>
+                        </div>
+                        <div class="containerButton">
+                            <a href="fileEdit"><button>Edit</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Image', 'Pdf', 'Video', 'Files'],
+            typeSpeed: 150,
+        });
+    </script>
+
+</body>
+
+</html>
